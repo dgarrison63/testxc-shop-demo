@@ -1,17 +1,17 @@
 variable "api_url" {
-  default = "https://tenant.ves.volterra.io/api"
+  default = "https://<tenant>.console.ves.volterra.io/api"
 }
 
 variable "api_p12_file" {
-  default = "./creds/tenant.api-creds.p12"
+  default = "./creds/<p12 filename>"
 }
 
 variable "base" {
-  default = "demo-app"
+  default = "demo-shop"
 }
 
 variable "app_fqdn" {
-  default = "demo-app.tenant.example.com"
+  default = "<application fqdn>"
 }
 
 variable "spoke_site_selector" {
@@ -31,7 +31,7 @@ variable "cred_expiry_days" {
 }
 
 variable "registry_server" {
-  default = "some_registry.example.com"
+  default = "ghcr.io/dgarrisonf5"
 }
 
 variable "registry_config_json" {
